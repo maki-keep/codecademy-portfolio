@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+nav {
+    height: 3.75rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.left-nav, .right-nav, .logo, .page-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left-nav, .right-nav {
+    height: inherit;
+    width: 50%;
+}
+
+.left-nav {
+    padding-left: 2rem;
+
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 48px;
+}
+
+.right-nav {
+    padding-right: 2rem;
+
+    justify-content: flex-end;
+}
+
+.page {
+    min-height: 100vh;
+    padding-top: 3.75rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 2rem 1.5rem 4rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.right-wrapper {
+    padding-left: 2rem;
+}
+
+/* img.avatar {
+    max-height: 256px;
+    -o-object-fit: contain;
+	object-fit: contain;
+    object-position: 50% 50%;
+    width: 100%;
+} */
+
+.profiles {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.icon-item, .footer-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon-item {
+    padding: 0.5rem 1rem;
+    z-index: 1;
+}
+
+.icon-item img, .icon-item object {
+    height: 32px;
+    margin-right: 16px;
+}
+
+a.icon-item {
+    cursor: pointer;
+}
+
+.skills-box {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer {
+    min-height: 11.25rem;
+    padding: 0 4rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-item {
+    flex: 1 0 10rem;
+    justify-content: center;
+}
