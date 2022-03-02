@@ -60,7 +60,7 @@ nav li {
     display: inline-block;
 }
 
-.left-nav, .right-nav, .logo, .page-links {
+.left-nav, .right-nav, .page-links {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -75,6 +75,14 @@ nav li {
     padding-left: 2rem;
 
     justify-content: flex-start;
+}
+
+.logo {
+    position: relative;
+    top: -1px;
+
+    display: flex;
+    align-self: flex-end;
 }
 
 .logo img {
@@ -128,16 +136,39 @@ nav li {
 
 .dropdown-left {
     left: 0;
+    /* -webkit-transition: left .2s ease-in-out;
+    -moz-transition: left .2s ease-in-out;
+    -ms-transition: left .2s ease-in-out;
+    -o-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out; */
 }
+
+/* .dropdown-left[aria-expanded="false"] {
+    left: -15%;
+} */
 
 .dropdown-right {
     right: 0;
+    /* -webkit-transition: right .2s ease-in-out;
+    -moz-transition: right .2s ease-in-out;
+    -ms-transition: right .2s ease-in-out;
+    -o-transition: right .2s ease-in-out;
+    transition: right .2s ease-in-out; */
 }
+
+/* .dropdown-right[aria-expanded="false"] {
+    right: -15%;
+} */
 
 .dropdown-item {
     cursor: pointer;
     height: 15vh;
     padding: 1rem;
+    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 
     display: flex;
     align-items: center;
@@ -147,11 +178,6 @@ nav li {
 .dropdown-item:hover {
     background-color: var(--color-wrapper);
     color: var(--color-text);
-    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .page {
