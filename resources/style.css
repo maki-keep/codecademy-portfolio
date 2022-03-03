@@ -7,6 +7,7 @@
     --color-link: #7030F0;
     --color-link-2-alpha: #3B198080;
     --color-link-active: #E1595B;
+    --font-imported: "";
 }
 
 *, :after, :before {
@@ -19,7 +20,7 @@ html, body {
 
 body {
     color: var(--color-text);
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: var(--font-imported), -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
     line-height: 1.5;
 }
 
@@ -116,7 +117,12 @@ nav li {
 }
 
 #themes-button {
+    color: #E76141;
     padding: 0 1rem;
+}
+
+#themes-button:active {
+    color: var(--color-wrapper);
 }
 
 .dropdown {

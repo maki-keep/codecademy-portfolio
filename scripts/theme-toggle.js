@@ -1,13 +1,12 @@
-// array of themes, each with an id (also class) and a display name;
-// Maki (themes[0]) is the light mode,
-// whereas Dark (themes[1]) is the dark mode
+// array of theme objects with id and display
 const themes = [
   {
-    id: "theme-maki",
-    display: "Maki"
-  }, {
-    id: "theme-dark",
-    display: "Dark"
+    "id": "theme-maki",
+    "display": "Maki"
+  },
+  {
+    "id": "theme-dark",
+    "display": "Dark"
   }
 ];
 

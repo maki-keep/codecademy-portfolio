@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap");
+
 .theme-maki {
     --color-page: #F0CCCC;
     --color-text: #0C0604;
@@ -7,6 +9,7 @@
     --color-link: #7030F0;
     --color-link-2-alpha: #3B198080;
     --color-link-active: #E1595B;
+    --font-imported: "Maven Pro";
 }
 
 .theme-dark {
@@ -18,4 +21,5 @@
     --color-link: #F992F1;
     --color-link-2-alpha: #FFFFFE80;
     --color-link-active: #E1595B;
+    --font-imported: "Maven Pro";
 }

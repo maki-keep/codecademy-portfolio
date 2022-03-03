@@ -18,7 +18,7 @@ $(document).ready(function() {
   $(document).on("click", event => {
     const $outerContainer = $(".dropdown-right").parent();
     if (!$(event.target).closest($outerContainer).length) {
-      $(".dropdown-right").animate({ right: "-15%" }, 200)
+      $(".dropdown-right").animate({ right: "-15%" }, 200);
       setTimeout(() => {
         $(".dropdown-right").hide().attr("aria-expanded", "false");
       }, 200);
