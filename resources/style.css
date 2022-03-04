@@ -10,6 +10,18 @@
     --font-imported: "";
 }
 
+.dark-mode {
+    --color-page: #241E1E;
+    --color-text: #F0F0F0;
+    --color-wrapper: #242424;
+    --color-block: #302C2B;
+    --color-border: #EAAF97;
+    --color-link: #F992F1;
+    --color-link-2-alpha: #FFFFFE80;
+    --color-link-active: #E1595B;
+    --font-imported: "";
+}
+
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -26,20 +38,28 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    font-weight: 500;
     line-height: 2;
 }
 
 h2 {
     font-size: 2rem;
+    font-weight: 500;
     line-height: 1.6;
 }
 
 h3 {
     font-size: 1.25rem;
+    font-weight: 500;
 }
 
 h4 {
     font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 500;
 }
 
 nav {
@@ -103,6 +123,8 @@ nav li {
 }
 
 .icon-item {
+    font-size: inherit;
+    font-weight: 500;
     padding: 0.5rem 1rem;
     z-index: 1;
 }
@@ -168,6 +190,8 @@ nav li {
 
 .dropdown-item {
     cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
     height: 15vh;
     padding: 1rem;
     -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
@@ -204,6 +228,7 @@ nav li {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    justify-content: center;
 }
 
 .profile-wrapper {
