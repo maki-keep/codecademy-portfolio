@@ -1,4 +1,107 @@
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap");
+/* latin-ext */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Regular.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Regular.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Regular.ttf") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Medium.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Medium.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Medium.ttf") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Bold.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Bold.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Bold.ttf") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Black.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Maven Pro";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/maven-pro/MavenPro-Black.ttf") format("embedded-opentype"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("svg"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("truetype"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("woff"),
+        url("../fonts/maven-pro/MavenPro-Black.ttf") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 .theme-maki {
     --color-page: #F0CCCC;
@@ -9,7 +112,7 @@
     --color-link: #7030F0;
     --color-link-2-alpha: #3B198080;
     --color-link-active: #E1595B;
-    --font-imported: "Maven Pro";
+    --fonts: "Maven Pro", sans-serif;
 }
 
 .theme-dark {
@@ -21,5 +124,17 @@
     --color-link: #F992F1;
     --color-link-2-alpha: #FFFFFE80;
     --color-link-active: #E1595B;
-    --font-imported: "Maven Pro";
+    --fonts: "Maven Pro", sans-serif;
+}
+
+.theme-dracula {
+    --color-page: #6272A4;
+    --color-text: #F8F8F2;
+    --color-wrapper: #282A36;
+    --color-block: #44475A;
+    --color-border: #FFB86C;
+    --color-link: #FF79C6;
+    --color-link-2-alpha: #8BE9FD80;
+    --color-link-active: #FF5555;
+    --fonts: "Consolas", "Courier New", monospace;
 }

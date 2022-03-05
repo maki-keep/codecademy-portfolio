@@ -7,7 +7,7 @@
     --color-link: #7030F0;
     --color-link-2-alpha: #3B198080;
     --color-link-active: #E1595B;
-    --font-imported: "";
+    --fonts: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 .dark-mode {
@@ -19,7 +19,6 @@
     --color-link: #F992F1;
     --color-link-2-alpha: #FFFFFE80;
     --color-link-active: #E1595B;
-    --font-imported: "";
 }
 
 *, :after, :before {
@@ -32,7 +31,7 @@ html, body {
 
 body {
     color: var(--color-text);
-    font-family: var(--font-imported), -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-family: var(--fonts);
     line-height: 1.5;
 }
 
@@ -81,7 +80,7 @@ nav li {
     display: inline-block;
 }
 
-.left-nav, .right-nav, .page-links {
+.left-nav, .right-nav {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -208,6 +207,7 @@ nav li {
 .dropdown-item:hover {
     background-color: var(--color-wrapper);
     color: var(--color-text);
+    font-family: var(--fonts);
 }
 
 .page {
@@ -251,7 +251,9 @@ nav li {
     width: 100%;
 } */
 
-.profiles {
+.profiles, .page-links {
+    max-width: fit-content;
+
     display: flex;
     align-items: stretch;
     flex-direction: column;
@@ -335,6 +337,7 @@ footer {
 
         align-items: center;
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .profile-wrapper {
@@ -379,6 +382,7 @@ footer {
 
         align-items: center;
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     img.avatar {

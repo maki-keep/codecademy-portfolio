@@ -29,6 +29,10 @@ const themes = [
   {
     "id": "theme-dark",
     "display": "Dark"
+  },
+  {
+    "id": "theme-dracula",
+    "display": "Dracula"
   }
 ];
 

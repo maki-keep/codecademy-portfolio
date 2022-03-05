@@ -1,12 +1,18 @@
 # maki-keep
 
 Portfolio featuring my programming skills and projects.
-Open any HTML file in a browser to see my pages.
+Open any HTML file of the main directory in a browser to see my pages.
+
+## Media
+
+[School Idol Tomodachi]("https://schoolido.lu/")
 
 ## Themes
 
-There is a list of themes that requires "script/theme-toggle.js" and "themes/themes.css" to work. When no themes are available, when the "Clear themes" button is pressed (i.e. the local storage doesn't have the "theme" item), or at the first page visit, the page responds to the dark mode settings of the device currently in use; notice here the lack of the "Maven Pro" custom font.
+There is a list of themes that requires "scripts/theme-toggle.js" and "themes/themes.css" to work. When no custom theme is selected (i.e. the local storage doesn't have the "theme" item), the page responds to the dark mode settings of the device currently in use; notice here a different font.
+
+[Dracula]("https://github.com/dracula/dracula-theme")
 
 ## Privacy
 
-See "privacy.html".
+This repository currently doesn't have any license. GitHub's Terms of Service apply. Do not reupload the content. Files with other licenses belong to their creators.
