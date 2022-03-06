@@ -36,6 +36,7 @@ const themes = [
   }
 ];
 
+// manage the themes array
 const switchToTheme = function(newTheme) {
   for (let i = 0; i < themes.length; i++) {
     if (themes[i].id !== newTheme.id) {
@@ -53,6 +54,17 @@ const clearThemes = function() {
   }
 }
 
+// manage the local storage
+const addThemeStorage = function(theme) {
+  localStorage.setItem("theme", theme.id);
+  switchToTheme(theme);
+}
+
+const clearThemeStorage = function() {
+  localStorage.removeItem("theme");
+  clearThemes();
+}
+
 const elementThemes = document.getElementById("themes");
 
 // input: object of the themes array
@@ -62,12 +74,18 @@ const createElementTheme = function(theme) {
   elementAnchor.classList.add("dropdown-item", `${theme.id}`);
   elementAnchor.id = theme.id;
   elementAnchor.innerHTML = theme.display;
+  elementAnchor.setAttribute("tabindex", "0");
+  elementAnchor.setAttribute("role", "button");
   elementLI.appendChild(elementAnchor);
   elementThemes.appendChild(elementLI);
   const elementTheme = document.getElementById(`${theme.id}`);
   elementTheme.addEventListener("click", () => {
-    localStorage.setItem("theme", theme.id);
-    switchToTheme(theme);
+    addThemeStorage(theme);
+  });
+  elementTheme.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      addThemeStorage(theme);
+    }
   });
 }
 
@@ -78,15 +96,22 @@ const createElementClear = function() {
   elementAnchor.classList.add("dropdown-item");
   elementAnchor.id = "clear-themes";
   elementAnchor.innerHTML = "Clear themes";
+  elementAnchor.setAttribute("tabindex", "0");
+  elementAnchor.setAttribute("role", "button");
   elementLI.appendChild(elementAnchor);
   elementThemes.appendChild(elementLI);
   const elementClear = document.getElementById("clear-themes");
   elementClear.addEventListener("click", () => {
-    localStorage.removeItem("theme");
-    clearThemes();
+    clearThemeStorage();
+  });
+  elementClear.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      clearThemeStorage();
+    }
   });
 }
 
+// function calls
 for (let i = 0; i < themes.length; i++) {
   createElementTheme(themes[i]);
   if (localStorage.getItem("theme") === themes[i].id) {
