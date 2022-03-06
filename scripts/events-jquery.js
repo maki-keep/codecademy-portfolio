@@ -24,16 +24,19 @@ $(document).ready(function() {
 
   // Maki's star toggles the themes dropdown list
   // click anywhere else to hide the themes dropdown list
-  $("#themes").animate({ right: offset }, 0).hide().attr("aria-expanded", "false");
-  $("#themes-button").css({ cursor: "pointer" }).on("click", (event) => {
+  $("#themes").animate({ right: offset }, 0).hide();
+  $("#themes-button").attr("aria-expanded", "false");
+  $("#themes-button").addClass("loaded").on("click", (event) => {
     const $dropdown = $(event.currentTarget).next();
     let display = $dropdown.css("display") === "none";
     if (display) {
-      $dropdown.show().animate({ right: "0" }, 200).attr("aria-expanded", "true");
+      $dropdown.show().animate({ right: "0" }, 200);
+      $(event.currentTarget).attr("aria-expanded", "true");
     } else if (!display) {
       $dropdown.animate({ right: offset }, 200);
       setTimeout(() => {
-        $dropdown.hide().attr("aria-expanded", "false");
+        $dropdown.hide();
+        $(event.currentTarget).attr("aria-expanded", "false");
       }, 200);
     }
   });
@@ -42,7 +45,8 @@ $(document).ready(function() {
     if (!$(event.target).closest($outerContainer).length) {
       $(".dropdown-right").animate({ right: offset }, 200);
       setTimeout(() => {
-        $(".dropdown-right").hide().attr("aria-expanded", "false");
+        $(".dropdown-right").hide();
+        $(".dropdown-right").prev().attr("aria-expanded", "false");
       }, 200);
     }
   });
