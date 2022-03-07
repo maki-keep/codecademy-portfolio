@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # maki-keep
 
 Portfolio featuring my programming skills and projects.
