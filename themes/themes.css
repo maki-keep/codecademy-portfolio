@@ -5,7 +5,7 @@
     --color-block: #FCE9E1;
     --color-border: #EAAF97;
     --color-link: #7030F0;
-    --color-link-2-alpha: #3B198080;
+    --color-link-2: #3B1980;
     --color-link-active: #E1595B;
     --fonts: "Maven Pro", sans-serif;
 }
@@ -17,7 +17,7 @@
     --color-block: #302C2B;
     --color-border: #EAAF97;
     --color-link: #F992F1;
-    --color-link-2-alpha: #FFFFFE80;
+    --color-link-2: #FFFFFE;
     --color-link-active: #E1595B;
     --fonts: "Maven Pro", sans-serif;
 }
@@ -29,7 +29,7 @@
     --color-block: #44475A;
     --color-border: #FFB86C;
     --color-link: #FF79C6;
-    --color-link-2-alpha: #8BE9FD80;
+    --color-link-2: #8BE9FD;
     --color-link-active: #FF5555;
     --fonts: "Consolas", "Courier New", monospace;
 }

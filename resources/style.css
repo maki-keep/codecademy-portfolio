@@ -5,7 +5,7 @@
     --color-block: #FCE9E1;
     --color-border: #EAAF97;
     --color-link: #7030F0;
-    --color-link-2-alpha: #3B198080;
+    --color-link-2: #3B1980;
     --color-link-active: #E1595B;
     --fonts: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
@@ -17,7 +17,7 @@
     --color-block: #302C2B;
     --color-border: #EAAF97;
     --color-link: #F992F1;
-    --color-link-2-alpha: #FFFFFE80;
+    --color-link-2: #FFFFFE;
     --color-link-active: #E1595B;
 }
 
@@ -227,10 +227,14 @@ nav li {
 }
 
 .article-wrapper {
-    padding-left: 2rem;
+    margin-left: 2rem;
 
     display: flex;
     flex-direction: column;
+}
+
+section, article, .skill {
+    margin-bottom: 1rem;
 }
 
 .profiles, .page-links {
@@ -251,7 +255,7 @@ a[href].icon-item {
 }
 
 a[href].icon-item:hover {
-    text-shadow: 0 0 1px var(--color-link-2-alpha);
+    text-shadow: 0 0 2px var(--color-link);
 }
 
 a[href].icon-item:active {
@@ -332,12 +336,12 @@ footer {
     }
 
     .user-box {
-        padding-left: 2rem;
+        margin-left: 2rem;
     }
 
     .article-wrapper {
-        padding-left: 0;
-        padding-top: 2rem;
+        margin-left: 0;
+        margin-top: 2rem;
     }
 }
 
@@ -373,8 +377,8 @@ footer {
     }
 
     .article-wrapper {
-        padding-left: 0;
-        padding-top: 2rem;
+        margin-left: 0;
+        margin-top: 2rem;
     }
 }
 
