@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 versions
+*/
+
 :root {
     --color-page: #F0CCCC;
     --color-text: #0C0604;
@@ -22,11 +29,13 @@
 }
 
 *, :after, :before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html, body {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -71,9 +80,13 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 nav li {
@@ -81,9 +94,16 @@ nav li {
 }
 
 .left-nav, .right-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .left-nav, .right-nav {
@@ -93,16 +113,19 @@ nav li {
 
 .left-nav {
     padding-left: 2rem;
-
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .logo {
     position: relative;
     top: -1px;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .logo img {
@@ -111,14 +134,22 @@ nav li {
 
 .right-nav {
     padding-right: 2rem;
-
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .icon-item, .footer-item, #themes-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .icon-item {
@@ -153,16 +184,24 @@ nav li {
 .dropdown {
     background-color: var(--color-block);
     height: calc(100% - 3.75rem);
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     overflow: auto;
     width: 15%;
 
     position: fixed;
     top: 3.75rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .dropdown-left {
@@ -184,14 +223,17 @@ nav li {
     padding: 1rem;
     text-align: center;
     -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out, background-color .2s ease-in-out;
     -o-transition: color .2s ease-in-out, background-color .2s ease-in-out;
     transition: color .2s ease-in-out, background-color .2s ease-in-out;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .dropdown-item:hover {
@@ -204,9 +246,13 @@ nav li {
     background-color: var(--color-page);
     min-height: 100vh;
     padding-top: 3.75rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .wrapper {
@@ -214,23 +260,40 @@ nav li {
     margin: 0 auto;
     width: 70%;
     padding: 2rem 1.5rem 4rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .profile-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .article-wrapper {
     margin-left: 2rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 section, article, .skill {
@@ -238,11 +301,19 @@ section, article, .skill {
 }
 
 .profiles, .page-links {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 a {
@@ -263,10 +334,18 @@ a[href].icon-item:active {
 }
 
 .skills-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 footer {
@@ -274,43 +353,61 @@ footer {
     min-height: 11.25rem;
     padding: 0 4rem;
     width: 100%;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .footer-item {
-    flex: 1 0 10rem;
-    justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 10rem;
+            flex: 1 0 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .license-box {
     border-top: 1px solid var(--color-border);
     padding: 2rem 0 2.5rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    html, body {
-        font-size: 14px;
-    }
-
     nav {
         height: 5rem;
     }
 
+    .logo img {
+        height: 56px;
+    }
+
     .dropdown {
         width: 30%;
-
         top: 5rem;
     }
 
@@ -321,14 +418,23 @@ footer {
     .wrapper {
         max-width: 70em;
         width: 100%;
-
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     .profile-wrapper {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     img.avatar {
@@ -347,11 +453,15 @@ footer {
 
 @media only screen and (max-width: 767px) {
     html, body {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     nav {
         height: 5rem;
+    }
+
+    .logo img {
+        height: 56px;
     }
 
     .dropdown {
@@ -366,10 +476,16 @@ footer {
 
     .wrapper {
         width: 100%;
-
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     img.avatar {
@@ -382,8 +498,10 @@ footer {
     }
 }
 
-@supports (height: min-content) {
-	.dropdown {
-		min-width: min-content;
-	}
+@supports ((min-width: -webkit-min-content) or (min-width: -moz-min-content) or (min-width: min-content)) {
+    .dropdown {
+        min-width: -webkit-min-content;
+        min-width: -moz-min-content;
+        min-width: min-content;
+    }
 }
