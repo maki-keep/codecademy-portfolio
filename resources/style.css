@@ -295,14 +295,20 @@ nav li {
             flex-direction: column;
 }
 
-section, article, .skill {
-    margin-bottom: 1rem;
+section, article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    margin-bottom: 1.75rem;
 }
 
 .profiles, .page-links {
+    margin: 1rem 0;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -322,6 +328,9 @@ a {
 a[href].icon-item {
     color: var(--color-link);
     cursor: pointer;
+    -webkit-transition: text-shadow .2s ease-in-out;
+    -o-transition: text-shadow .2s ease-in-out;
+    transition: text-shadow .2s ease-in-out;
 }
 
 a[href].icon-item:hover {
@@ -330,6 +339,11 @@ a[href].icon-item:hover {
 
 a[href].icon-item:active {
     color: var(--color-link-active);
+}
+
+.profiles a {
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .skills-box {
@@ -486,6 +500,14 @@ footer {
     .article-wrapper {
         margin-left: 0;
         margin-top: 2rem;
+    }
+
+    section, article {
+        margin-bottom: 3.25rem;
+    }
+
+    article h2 {
+        margin-bottom: 3rem;
     }
 }
 
