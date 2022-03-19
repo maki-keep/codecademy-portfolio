@@ -22,11 +22,11 @@ window.matchMedia("(max-width: 1023px)").addEventListener("change", (event) => {
 
 const toggleDropdown = (event) => {
   const $dropdown = $(event.currentTarget).next();
-  let display = $dropdown.css("display") === "none";
-  if (display) {
+  const isHidden = $dropdown.css("display") === "none";
+  if (isHidden) {
     $dropdown.show().attr("aria-hidden", "false").animate({ right: "0" }, 200);
     $(event.currentTarget).attr("aria-expanded", "true");
-  } else if (!display) {
+  } else {
     $dropdown.animate({ right: offset }, 200);
     setTimeout(() => {
       $dropdown.hide().attr("aria-hidden", "true");
