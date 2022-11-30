@@ -1,4 +1,4 @@
-const body = document.body;
+const { body } = document;
 
 // detects dark mode when loading the page
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -29,6 +29,10 @@ const themes = [
   {
     "id": "theme-dark",
     "display": "Dark"
+  },
+  {
+    "id": "theme-yousolo",
+    "display": "YouSolo"
   },
   {
     "id": "theme-dracula",
@@ -70,13 +74,13 @@ const elementThemes = document.getElementById("themes");
 // input: object of the themes array
 const createElementTheme = function(theme) {
   const elementLI = document.createElement("li");
-  const elementAnchor = document.createElement("a");
-  elementAnchor.classList.add("dropdown-item", `${theme.id}`);
-  elementAnchor.id = theme.id;
-  elementAnchor.innerHTML = theme.display;
-  elementAnchor.setAttribute("tabindex", "0");
-  elementAnchor.setAttribute("role", "button");
-  elementLI.appendChild(elementAnchor);
+  const elementButton = document.createElement("button");
+  elementButton.classList.add("dropdown-item", `${theme.id}`);
+  elementButton.id = theme.id;
+  elementButton.innerHTML = theme.display;
+  elementButton.setAttribute("tabindex", "0");
+  elementButton.setAttribute("role", "button");
+  elementLI.appendChild(elementButton);
   elementThemes.appendChild(elementLI);
   const elementTheme = document.getElementById(`${theme.id}`);
   elementTheme.addEventListener("click", () => {
@@ -92,13 +96,13 @@ const createElementTheme = function(theme) {
 // create the "Clear themes" button after the themes
 const createElementClear = function() {
   const elementLI = document.createElement("li");
-  const elementAnchor = document.createElement("a");
-  elementAnchor.classList.add("dropdown-item");
-  elementAnchor.id = "clear-themes";
-  elementAnchor.innerHTML = "Clear themes";
-  elementAnchor.setAttribute("tabindex", "0");
-  elementAnchor.setAttribute("role", "button");
-  elementLI.appendChild(elementAnchor);
+  const elementButton = document.createElement("button");
+  elementButton.classList.add("dropdown-item");
+  elementButton.id = "clear-themes";
+  elementButton.innerHTML = "Clear themes";
+  elementButton.setAttribute("tabindex", "0");
+  elementButton.setAttribute("role", "button");
+  elementLI.appendChild(elementButton);
   elementThemes.appendChild(elementLI);
   const elementClear = document.getElementById("clear-themes");
   elementClear.addEventListener("click", () => {

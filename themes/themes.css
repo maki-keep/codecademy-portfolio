@@ -1,35 +1,42 @@
+/*
+* theme variables replace the default light and dark values
+* if a theme variable is not specified, the default value will be used
+*/
 .theme-maki {
+    --color-block: #FFDEDE;
+    --color-border: #F0BBBB;
+    --color-link: #8800F0;
+    /* --color-link-active: #E1595B; */
     --color-page: #F0CCCC;
-    --color-text: #0C0604;
+    --color-text: #0C0404;
     --color-wrapper: #FFFFFF;
-    --color-block: #FCE9E1;
-    --color-border: #EAAF97;
-    --color-link: #7030F0;
-    --color-link-2: #3B1980;
-    --color-link-active: #E1595B;
-    --fonts: "Maven Pro", sans-serif;
+    /* --fonts: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif; */
 }
-
 .theme-dark {
+    --color-block: #302323;
+    --color-border: #423030;
+    --color-link: #BD66FF;
     --color-page: #241E1E;
-    --color-text: #F0F0F0;
+    --color-text: #FFFFFF;
     --color-wrapper: #242424;
-    --color-block: #302C2B;
-    --color-border: #EAAF97;
-    --color-link: #F992F1;
-    --color-link-2: #FFFFFE;
-    --color-link-active: #E1595B;
-    --fonts: "Maven Pro", sans-serif;
 }
-
+.theme-yousolo {
+    --color-block: #FFCBDE;
+    --color-border: #CCCCCC;
+    --color-link: #0077AC;
+    --color-link-active: #0085C0;
+    --color-page: #FFCBDE;
+    --color-text: #0F0008;
+    --color-wrapper: #FFFFFF;
+    --fonts: "Noto Sans", -apple-system, BlinkMacSystemFont, "Century Gothic", "YuGothic", "Meiryo", "Helvetica Neue", "Arial", sans-serif;
+}
 .theme-dracula {
-    --color-page: #6272A4;
-    --color-text: #F8F8F2;
-    --color-wrapper: #282A36;
     --color-block: #44475A;
     --color-border: #FFB86C;
     --color-link: #FF79C6;
-    --color-link-2: #8BE9FD;
     --color-link-active: #FF5555;
+    --color-page: #44475A;
+    --color-text: #F8F8F2;
+    --color-wrapper: #282A36;
     --fonts: "Consolas", "Courier New", monospace;
 }
